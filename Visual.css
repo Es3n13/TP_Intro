@@ -1,0 +1,446 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #e4e5e0;
+    background-image: url('Images/background2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Logo */
+.logo{
+    display: block;
+    margin: 0 auto;
+    text-align: center; 
+    width: auto;
+    height: 300px;
+}
+
+/* En-tête */
+header {
+    background-color: #e4e5e0;
+    height: 300px;
+}
+
+.festival {
+    font-family: Blippo, fantasy;
+    font-size: small;
+    background-color: #ed8f13;
+    color:black ;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    border-radius: 5px;
+}
+
+/* Barre de navigation */
+nav {
+    margin-top: 10px;
+    text-align: center;
+    background-color:#e4e5e0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav a {
+    font-family: Blippo, fantasy;
+    color: black;
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur principal */
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.intro h2 {
+    font-size: 2em;
+    color: #333;
+}
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+/* Informations */
+.informations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.info h3 {
+    color: #1a1c30;
+}
+.info p {
+    line-height: 1.5;
+}
+/* Prorammation des activités */
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.day {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.day h3 {
+    color: #1a1c30;
+    margin-bottom: 10px;
+}
+.event {
+    margin-bottom: 15px;
+}
+.event p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Formulaire d'inscription */
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 10px 0 5px;
+}
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #1a1c30;
+}
+
+/* Achat de billet */
+.ticket-prices {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.ticket-prices table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ticket-prices th, .ticket-prices td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.total-price {
+    font-weight: bold;
+    color: #1a1c30;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Intervenants */
+.speaker {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.speaker-info {
+    flex-grow: 1;
+}
+.speaker-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #1a1c30;
+}
+.speaker-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/*Liens vers les médias sociaux des participants */
+.social-links {
+    margin-top: 10px;
+}
+.social-links a {
+    margin-right: 10px;
+    font-size: 1.0em;
+    color: #1a1c30;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #004494;
+    text-decoration: underline;
+}
+
+/* Sponsors */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+.sponsor {
+    text-align: center;
+}
+.sponsor img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.sponsor img:hover {
+    transform: scale(1.1);
+}
+.sponsor a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #1a1c30;
+    text-decoration: none;
+}
+.sponsor a:hover {
+    color: #004494;
+    text-decoration: underline;
+    transform: scale(1.1);
+    
+}
+
+/* À propos */
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subtitle {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.subtitle h3 {
+    color: #1a1c30;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1a1c30;
+    outline: none;
+}
+
+/* Coordonnées */
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #1a1c30;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Carte Google Map */
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.0em;
+    color: #1a1c30;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #004494;
+    transform: scale(1.1)
+}
+
+/* Pied de page */
+footer {
+    background-color: #ed8f13;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+/* Boutons */
+.button-containers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.submit-btn-container {
+    text-align: center;
+}
+
+.submit-btn {
+    font-family: Arial, sans-serif;
+    background-color: #1a1c30;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    
+    background-color: #004494;
+    transform: scale(1.1);
+}
+
+.reset-btn-container {
+    text-align: right;
+}
+
+.reset-btn {
+    background-color: #8ca8ba;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+
+.reset-btn:hover {
+    background-color: #45535c;
+    transform: scale(1.1);
+}
